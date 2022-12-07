@@ -1,7 +1,8 @@
 import React from 'react'
+import { ScreenContainer } from '../../shared/styles'
 
 export default function Player() {
   return (
-    <div>player</div>
+    <ScreenContainer>player</ScreenContainer>
   )
 }

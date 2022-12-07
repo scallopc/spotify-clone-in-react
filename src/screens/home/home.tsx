@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "../../components/sidebar/sidebar";
-import Trending from "../../trending/trending";
+import Trending from "../trending/trending";
 import Favorites from "../favorites/favorites";
 import Feed from "../feed/feed";
 import Library from "../library/library";

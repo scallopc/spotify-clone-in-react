@@ -17,10 +17,8 @@ export default function SidebarButton(props: any) {
   return (
     <Link to={props.to}>
       <Body className={btnClass}>
-        <div className="btn-icon">
           <FontAwesomeIcon icon={props.icon} />
-        </div>
-        <Title className="btn-title">{props.title}</Title>
+        <Title>{props.title}</Title>
       </Body>
     </Link>
   );
