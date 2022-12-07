@@ -1,5 +1,5 @@
 import Home from "./screens/home/home";
-import { GlobalStyle } from "./styles/globalStyles";
+import { GlobalStyle } from "./shared/globalStyles";
 
 export default function App() {
   return (

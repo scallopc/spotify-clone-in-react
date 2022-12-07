@@ -5,12 +5,12 @@ import Favorites from "../favorites/favorites";
 import Feed from "../feed/feed";
 import Library from "../library/library";
 import Player from "../player/player";
-import "./home.scss";
+import { Container } from "./styles";
 
 export default function Home() {
   return (
     <Router>
-      <div className="main-body">
+      <Container>
         <Sidebar />
         <Routes>
           <Route path="/" element={<Library />} />
@@ -19,7 +19,7 @@ export default function Home() {
           <Route path="/player" element={<Player />} />
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
-      </div>
+      </Container>
     </Router>
   );
 }
