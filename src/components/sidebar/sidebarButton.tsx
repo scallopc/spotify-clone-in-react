@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
+import { Body, Title } from "./styles";
 
 export type Props = {  
   icon: IconName | any;
@@ -11,17 +12,16 @@ export default function SidebarButton(props: any) {
   const location = useLocation();
 
   const isActive = location.pathname === props.to;
-
-  const btnClass = isActive ? "btn-body active" : "btn-body";
+  const btnClass = isActive ? "active" : " ";
 
   return (
     <Link to={props.to}>
-      <div className={btnClass}>
+      <Body className={btnClass}>
         <div className="btn-icon">
           <FontAwesomeIcon icon={props.icon} />
         </div>
-        <p className="btn-title">{props.title}</p>
-      </div>
+        <Title className="btn-title">{props.title}</Title>
+      </Body>
     </Link>
   );
 }

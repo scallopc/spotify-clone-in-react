@@ -15,4 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 20px;
   }
 
+a {
+  text-decoration: none;
+}
 `;

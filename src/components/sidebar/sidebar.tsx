@@ -1,4 +1,4 @@
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart, faFireFlameCurved, faPlay, faHouse, faFolder, faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import SidebarButton from "./sidebarButton";
 import { Avatar, SidebarContainer } from "./styles";
@@ -17,17 +17,17 @@ export default function Sidebar() {
     <SidebarContainer>
       <Avatar src={image} alt="profile" />
       <div>
-      <SidebarButton title="Feed" to="/feed" icon={faHeart} />
-        <SidebarButton title="Trending" to="/trending" icon={faHeart} />
-        <SidebarButton title="Player" to="/player" icon={faHeart} />
+      <SidebarButton title="Feed" to="/feed" icon={faHouse} />
+        <SidebarButton title="Trending" to="/trending" icon={faFireFlameCurved} />
+        <SidebarButton title="Player" to="/player" icon={faPlay} />
         <SidebarButton
           title="Favorites"
           to="/favorites"
           icon={faHeart}
         />
-        <SidebarButton title="Library" to="/" icon={faHeart} />
+        <SidebarButton title="Library" to="/" icon={faFolder} />
       </div>
-      <SidebarButton title="Sign Out" to="" icon={faHeart} />
+      <SidebarButton title="Sign Out" to="" icon={faArrowRightFromBracket} />
     </SidebarContainer>
   );
 }
