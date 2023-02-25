@@ -6,10 +6,12 @@ import Feed from "../feed/feed";
 import Library from "../library/library";
 import Player from "../player/player";
 import { Container } from "./styles";
+import Login from "../login/login";
 
 export default function Home() {
   return (
     <Router>
+      {/* <Login /> */}
       <Container>
         <Sidebar />
         <Routes>
