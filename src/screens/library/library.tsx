@@ -3,6 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { ScreenContainer } from "../../shared/styles";
 import APIKit from "../../spotify";
 import "./library.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  LibraryContainer,
+  PlaylistCard,
+  PlaylistFade,
+  PlaylistImage,
+  PlaylistSubtitle,
+  PlaylistTitle,
+} from "./styles";
 
 export default function Library() {
   const [playlists, setPlaylists] = useState<any>(null);
@@ -19,28 +29,26 @@ export default function Library() {
     navigate("/player", { state: { id: id } });
   };
 
-  return <ScreenContainer>
-    <div className="library-body">
+  return (
+    <ScreenContainer>
+      <LibraryContainer>
         {playlists?.map((playlist: any) => (
-          <div
-            className="playlist-card"
+          <PlaylistCard
             key={playlist.id}
             onClick={() => playPlaylist(playlist.id)}
           >
-            <img
-              src={playlist.images[0].url}
-              className="playlist-image"
-              alt="Playlist-Art"
-            />
-            <p className="playlist-title">{playlist.name}</p>
-            <p className="playlist-subtitle">{playlist.tracks.total} Songs</p>
-            <div className="playlist-fade">
-              {/* <IconContext.Provider value={{ size: "50px", color: "#E99D72" }}>
-                <AiFillPlayCircle />
-              </IconContext.Provider> */}oi
-            </div>
-          </div>
+            <PlaylistImage src={playlist.images[0].url} alt="Playlist-Art" />
+            <PlaylistTitle>{playlist.name}</PlaylistTitle>
+            <PlaylistSubtitle>{playlist.tracks.total} Songs</PlaylistSubtitle>
+            <PlaylistFade>
+              <FontAwesomeIcon
+                style={{ fontSize: "50px", color: "#E99D72" }}
+                icon={faPlayCircle}
+              />
+            </PlaylistFade>
+          </PlaylistCard>
         ))}
-      </div>
-  </ScreenContainer>;
+      </LibraryContainer>
+    </ScreenContainer>
+  );
 }
