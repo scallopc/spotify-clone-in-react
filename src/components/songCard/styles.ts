@@ -1,0 +1,12 @@
+import styled from "styled-components";
+
+export const SongCardContainer = styled.div`
+  width: 100%;
+  height: 62%;
+  background-color: #27354d;
+  border-radius: 30px;
+  border-bottom-right-radius: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
