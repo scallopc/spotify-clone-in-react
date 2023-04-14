@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ScreenContainer = styled.div`
+  display: flex;
   width: calc(100% - 100px);
   height: 100%;
   background-color: #1e2a3e;
