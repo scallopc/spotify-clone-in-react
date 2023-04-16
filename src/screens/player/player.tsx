@@ -24,7 +24,7 @@ export default function Player() {
   }, [location.state]);
 
   useEffect(() => {
-    //setCurrentTrack(tracks[currentIndex]?.track);
+    setCurrentTrack(tracks[currentIndex]?.track);
     console.log(tracks[currentIndex]);
   }, [currentIndex, tracks]);
 
