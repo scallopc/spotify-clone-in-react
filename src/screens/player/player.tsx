@@ -8,7 +8,7 @@ import Queue from "../../components/queue/queue";
 
 export default function Player() {
   const location = useLocation();
-  const [tracks, setTracks] = useState([]);
+  const [tracks, setTracks] = useState<any>([]);
   const [currentTrack, setCurrentTrack] = useState<any>({});
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -24,8 +24,8 @@ export default function Player() {
   }, [location.state]);
 
   useEffect(() => {
-    //setCurrentTrack(tracks[currentIndex]?.track);
-    console.log(tracks[currentIndex]);
+    setCurrentTrack(tracks[currentIndex]?.track);
+    // console.log(tracks[currentIndex]?.track);
   }, [currentIndex, tracks]);
 
   return (
