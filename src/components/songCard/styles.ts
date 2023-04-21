@@ -36,3 +36,12 @@ export const Image = styled.img`
   aspect-ratio: 1;
   ${AlbumImageShadow}
 `;
+
+export const AlbumInfoCardContainer = styled.div`
+  margin-top: 20px;
+  width: 80%;
+`;
+
+// .albumInfo-card p {
+//   margin: 5px auto !important;
+// }
