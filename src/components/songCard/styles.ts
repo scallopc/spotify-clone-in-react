@@ -45,3 +45,11 @@ export const AlbumInfoCardContainer = styled.div`
     margin: 5px auto !important;
   }
 `;
+
+export const AlbumNameContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c3d0e3;
+`;
