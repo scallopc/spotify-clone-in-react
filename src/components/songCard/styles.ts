@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const SongCardContainer = styled.div`
   width: 100%;
@@ -54,21 +54,21 @@ export const AlbumNameContainer = styled.div`
   color: #c3d0e3;
 `;
 
+const animationMarquee = keyframes`
+ 0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
 export const Marquee = styled.div`
   white-space: nowrap;
   display: inline-block;
-  animation: marquee 12s linear infinite;
+  animation: ${animationMarquee} 12s linear infinite;
   padding-left: 100%;
 `;
-
-// @keyframes marquee {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(-100%);
-//   }
-// }
 
 // .album-info {
 //   font-size: 14px;
