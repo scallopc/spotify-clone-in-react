@@ -37,6 +37,7 @@ export const Image = styled.img`
   ${AlbumImageShadow}
 `;
 
+//albumInfo
 export const AlbumInfoCardContainer = styled.div`
   margin-top: 20px;
   width: 80%;
@@ -70,17 +71,17 @@ export const Marquee = styled.div`
   padding-left: 100%;
 `;
 
-// .album-info {
-//   font-size: 14px;
-//   font-weight: 500;
-//   color: #9aa9c2;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   display: -webkit-box;
-//   -webkit-line-clamp: 2;
-//   line-clamp: 2;
-//   -webkit-box-orient: vertical;
-// }
+export const albumInfo = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  color: #9aa9c2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+`;
 
 // .album-release {
 //   font-size: 12px;
