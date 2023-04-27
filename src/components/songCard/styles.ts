@@ -71,7 +71,7 @@ export const Marquee = styled.div`
   padding-left: 100%;
 `;
 
-export const albumInfo = styled.div`
+export const AlbumInfo = styled.div`
   font-size: 14px;
   font-weight: 500;
   color: #9aa9c2;
@@ -83,9 +83,9 @@ export const albumInfo = styled.div`
   -webkit-box-orient: vertical;
 `;
 
-// .album-release {
-//   font-size: 12px;
-//   font-weight: 400;
-//   color: #9aa9c2;
-//   margin-top: 10px;
-// }
+export const AlbumRelease = styled.div`
+  font-size: 12px;
+  font-weight: 400;
+  color: #9aa9c2;
+  margin-top: 10px;
+`;
