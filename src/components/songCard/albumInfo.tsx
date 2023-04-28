@@ -1,4 +1,5 @@
 import React from "react";
+import { AlbumInfoCardContainer, AlbumNameContainer } from "./styles";
 
 export default function AlbumInfo({ album }: any) {
   const artists: any = [];
@@ -7,12 +8,12 @@ export default function AlbumInfo({ album }: any) {
   });
 
   return (
-    <div className="albumInfo-card">
-      <div className="albumName-container">
+    <AlbumInfoCardContainer>
+      <AlbumNameContainer>
         <div className="marquee">
           <p>{album?.name + " - " + artists?.join(", ")}</p>
         </div>
-      </div>
+      </AlbumNameContainer>
       <div className="album-info">
         <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
           ", "
@@ -21,6 +22,6 @@ export default function AlbumInfo({ album }: any) {
       <div className="album-release">
         <p>Release Date: {album?.release_date}</p>
       </div>
-    </div>
+    </AlbumInfoCardContainer>
   );
 }

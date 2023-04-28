@@ -6,6 +6,7 @@ export const SongCardContainer = styled.div`
   background-color: #27354d;
   border-radius: 30px;
   border-bottom-right-radius: 0px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
