@@ -1,5 +1,9 @@
 import React from "react";
-import { AlbumInfoCardContainer, AlbumNameContainer } from "./styles";
+import {
+  AlbumInfoCardContainer,
+  AlbumNameContainer,
+  AlbumRelease,
+} from "./styles";
 
 export default function AlbumInfo({ album }: any) {
   const artists: any = [];
@@ -19,9 +23,9 @@ export default function AlbumInfo({ album }: any) {
           ", "
         )} with ${album?.total_tracks} track(s)`}</p>
       </div>
-      <div className="album-release">
+      <AlbumRelease>
         <p>Release Date: {album?.release_date}</p>
-      </div>
+      </AlbumRelease>
     </AlbumInfoCardContainer>
   );
 }
