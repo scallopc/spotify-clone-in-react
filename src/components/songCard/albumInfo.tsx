@@ -18,11 +18,11 @@ export default function AlbumInfo({ album }: any) {
           <p>{album?.name + " - " + artists?.join(", ")}</p>
         </div>
       </AlbumNameContainer>
-      <div className="album-info">
+      <AlbumInfo>
         <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
           ", "
         )} with ${album?.total_tracks} track(s)`}</p>
-      </div>
+      </AlbumInfo>
       <AlbumRelease>
         <p>Release Date: {album?.release_date}</p>
       </AlbumRelease>
