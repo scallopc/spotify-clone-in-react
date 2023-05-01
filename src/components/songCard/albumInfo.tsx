@@ -3,6 +3,7 @@ import {
   AlbumInfoCardContainer,
   AlbumNameContainer,
   AlbumRelease,
+  Marquee,
 } from "./styles";
 
 export default function AlbumInfo({ album }: any) {
@@ -14,9 +15,9 @@ export default function AlbumInfo({ album }: any) {
   return (
     <AlbumInfoCardContainer>
       <AlbumNameContainer>
-        <div className="marquee">
+        <Marquee>
           <p>{album?.name + " - " + artists?.join(", ")}</p>
-        </div>
+        </Marquee>
       </AlbumNameContainer>
       <AlbumInfo>
         <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
