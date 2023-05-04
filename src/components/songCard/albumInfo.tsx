@@ -15,9 +15,9 @@ export default function AlbumInfo({ album }: any) {
   return (
     <AlbumInfoCardContainer>
       <div>
-        <div>
+        <AlbumNameContainer>
           <p>{album?.name + " - " + artists?.join(", ")}</p>
-        </div>
+        </AlbumNameContainer>
       </div>
       <div>
         <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
