@@ -14,19 +14,15 @@ export default function AlbumInfo({ album }: any) {
 
   return (
     <AlbumInfoCardContainer>
+      <AlbumNameContainer>
+        <Marquee>{album?.name + " - " + artists?.join(", ")}</Marquee>
+      </AlbumNameContainer>
       <div>
-        <AlbumNameContainer>
-          <p>{album?.name + " - " + artists?.join(", ")}</p>
-        </AlbumNameContainer>
-      </div>
-      <div>
-        <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
+        {`${album?.name} is an ${album?.album_type} by ${artists?.join(
           ", "
-        )} with ${album?.total_tracks} track(s)`}</p>
+        )} with ${album?.total_tracks} track(s)`}
       </div>
-      <div>
-        <p>Release Date: {album?.release_date}</p>
-      </div>
+      <AlbumRelease>Release Date: {album?.release_date}</AlbumRelease>
     </AlbumInfoCardContainer>
   );
 }
