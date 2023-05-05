@@ -33,7 +33,7 @@ export default function Player() {
       <LeftPlayer></LeftPlayer>
       <RightPlayer>
         <SongCard album={currentTrack?.album} />
-        <Queue />
+        {/* <Queue tracks={tracks} setCurrentIndex={setCurrentIndex} /> */}
       </RightPlayer>
     </ScreenContainer>
   );

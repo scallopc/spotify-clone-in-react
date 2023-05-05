@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const SongCardContainer = styled.div`
   width: 100%;
-  height: 62%;
+  height: 41%;
   background-color: #27354d;
   border-radius: 30px;
   border-bottom-right-radius: 0px;
@@ -42,10 +42,7 @@ export const Image = styled.img`
 export const AlbumInfoCardContainer = styled.div`
   margin-top: 20px;
   width: 80%;
-
-  p {
-    margin: 5px auto !important;
-  }
+  margin: 5px auto !important;
 `;
 
 export const AlbumNameContainer = styled.div`
@@ -72,7 +69,7 @@ export const Marquee = styled.div`
   padding-left: 100%;
 `;
 
-export const AlbumInfo = styled.p`
+export const AlbumInfo = styled.div`
   font-size: 14px;
   font-weight: 500;
   color: #9aa9c2;

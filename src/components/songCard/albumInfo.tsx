@@ -18,9 +18,11 @@ export default function AlbumInfo({ album }: any) {
         <Marquee>{album?.name + " - " + artists?.join(", ")}</Marquee>
       </AlbumNameContainer>
       <div>
-        {`${album?.name} is an ${album?.album_type} by ${artists?.join(
-          ", "
-        )} with ${album?.total_tracks} track(s)`}
+        <p>
+          {`${album?.name} is an ${album?.album_type} by ${artists?.join(
+            ", "
+          )} with ${album?.total_tracks} track(s)`}
+        </p>
       </div>
       <AlbumRelease>Release Date: {album?.release_date}</AlbumRelease>
     </AlbumInfoCardContainer>
