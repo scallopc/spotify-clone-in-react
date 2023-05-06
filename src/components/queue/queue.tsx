@@ -5,7 +5,7 @@ export default function Queue({ tracks, setCurrentIndex }: any) {
     <div className="queue-container flex">
       <div className="queue flex">
         <p className="upNext">Up Next</p>
-        {/* <div className="queue-list">
+        <div className="queue-list">
           {tracks?.map((track: any, index: any) => (
             <div
               key={index + "key"}
@@ -16,7 +16,7 @@ export default function Queue({ tracks, setCurrentIndex }: any) {
               <p>0:30</p>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
