@@ -1,21 +1,22 @@
 import styled from "styled-components";
-// .queue-container {
-//     width: 100%;
-//     height: 35%;
-//     border-radius: 30px;
-//     border-top-right-radius: 0px;
-//     background-color: #3e61d2;
-//     opacity: 1;
-//     background-image: repeating-radial-gradient(
-//         circle at 0 0,
-//         transparent 0,
-//         #3e61d2 40px
-//       ),
-//       repeating-linear-gradient(#4767d055, #4767d0);
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
+
+export const QueueContainer = styled.div`
+  width: 100%;
+  height: 35%;
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+  background-color: #3e61d2;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #3e61d2 40px
+    ),
+    repeating-linear-gradient(#4767d055, #4767d0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 //   .queue {
 //     height: 85%;
