@@ -1,9 +1,10 @@
 import React from "react";
+import { QueueContainer } from "./styles";
 
 export default function Queue({ tracks, setCurrentIndex }: any) {
   return (
-    <div className="queue-container flex">
-      <div className="queue flex">
+    <QueueContainer className="flex">
+      <Queue className="flex">
         <p className="upNext">Up Next</p>
         <div className="queue-list">
           {tracks?.map((track: any, index: any) => (
@@ -17,7 +18,7 @@ export default function Queue({ tracks, setCurrentIndex }: any) {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </Queue>
+    </QueueContainer>
   );
 }
