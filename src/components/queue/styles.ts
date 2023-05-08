@@ -18,12 +18,12 @@ export const QueueContainer = styled.div`
   align-items: center;
 `;
 
-//   .queue {
-//     height: 85%;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     width: 80%;
-//   }
+export const Queue = styled.div`
+  height: 85%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+`;
 
 //   .upNext {
 //     font-size: 20px;
