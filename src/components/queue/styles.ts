@@ -13,6 +13,7 @@ export const QueueContainer = styled.div`
       #3e61d2 40px
     ),
     repeating-linear-gradient(#4767d055, #4767d0);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -20,18 +21,19 @@ export const QueueContainer = styled.div`
 
 export const Queue = styled.div`
   height: 85%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
 `;
 
-//   .upNext {
-//     font-size: 20px;
-//     font-weight: 700;
-//     color: #fff;
-//     text-align: left;
-//     margin: 10px 0px;
-//   }
+export const UpNext = styled.p`
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  margin: 10px 0px;
+`;
 
 //   .queue-list {
 //     height: 80%;
