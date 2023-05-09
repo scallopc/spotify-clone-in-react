@@ -19,7 +19,7 @@ export default function Home() {
     window.localStorage.hash = "";
     if (!token && hash) {
       const _token: any = hash.split("&")[0].split("=")[1];
-      window.localStorage.setItem("token", _token);
+      //window.localStorage.setItem("token", _token);
       setToken(_token);
       setClientToken(_token);
     } else {

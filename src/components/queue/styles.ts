@@ -35,11 +35,11 @@ export const UpNext = styled.p`
   margin: 10px 0px;
 `;
 
-//   .queue-list {
-//     height: 80%;
-//     width: 100%;
-//     overflow-y: auto;
-//   }
+export const QueueList = styled.div`
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+`;
 
 //   .queue-list::-webkit-scrollbar {
 //     display: none;
