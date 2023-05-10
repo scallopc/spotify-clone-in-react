@@ -39,11 +39,11 @@ export const QueueList = styled.div`
   height: 80%;
   width: 100%;
   overflow-y: auto;
-`;
 
-//   .queue-list::-webkit-scrollbar {
-//     display: none;
-//   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
 
 //   .queue-item {
 //     justify-content: space-between;
