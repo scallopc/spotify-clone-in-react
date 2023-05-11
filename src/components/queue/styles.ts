@@ -45,16 +45,16 @@ export const QueueList = styled.div`
   }
 `;
 
-//   .queue-item {
-//     justify-content: space-between;
-//     width: 100%;
-//     padding: 5px 0px;
-//     font-size: 14px;
-//     font-weight: 500;
-//     color: #fff;
-//     cursor: pointer;
-//     transition: all 0.2s ease;
-//   }
+export const QueueItem = styled.div`
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+`;
 
 //   .queue-item:hover {
 //     transform: scale(0.95);
