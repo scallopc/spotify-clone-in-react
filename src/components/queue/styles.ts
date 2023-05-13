@@ -54,6 +54,10 @@ export const QueueItem = styled.div`
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 `;
 
 //   .queue-item:hover {
