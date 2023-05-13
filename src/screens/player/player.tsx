@@ -11,21 +11,22 @@ export default function Player() {
   const [tracks, setTracks] = useState<any>([]);
   const [currentTrack, setCurrentTrack] = useState<any>({});
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  console.log(location.state);
   useEffect(() => {
     if (location.state) {
-      apiClient
-        .get("playlists/" + location.state?.id + "/tracks")
-        .then((res) => {
-          setTracks(res.data.items);
-          setCurrentTrack(res.data?.items[0]?.track);
-        });
+      console.log(location.state);
+      // apiClient
+      //   .get("playlists/" + location.state?.id + "/tracks")
+      //   .then((res) => {
+      //     setTracks(res.data.items);
+      //     setCurrentTrack(res.data?.items[0]?.track);
+      //   });
     }
   }, [location.state]);
 
   useEffect(() => {
     setCurrentTrack(tracks[currentIndex]?.track);
-    // console.log(tracks[currentIndex]?.track);
+    console.log(tracks[currentIndex]?.track);
   }, [currentIndex, tracks]);
 
   return (

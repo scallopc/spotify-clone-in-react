@@ -19,7 +19,7 @@ export default function Library() {
 
   useEffect(() => {
     APIKit.get("me/playlists").then(function (response) {
-      console.log(response.data.items);
+      //console.log(response.data.items);
       setPlaylists(response.data.items);
     });
   }, []);
