@@ -58,15 +58,11 @@ export const QueueItem = styled.div`
   &:hover {
     transform: scale(0.95);
   }
+
+  p {
+    margin: 0px;
+  }
 `;
-
-//   .queue-item:hover {
-//     transform: scale(0.95);
-//   }
-
-//   .queue-item p {
-//     margin: 0px;
-//   }
 
 //   .track-name {
 //     width: 75%;
