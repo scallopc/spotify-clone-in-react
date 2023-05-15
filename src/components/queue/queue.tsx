@@ -1,11 +1,11 @@
 import React from "react";
-import { QueueContainer } from "./styles";
+import { QueueContainer, UpNext } from "./styles";
 
 export default function Queue({ tracks, setCurrentIndex }: any) {
   return (
     <QueueContainer className="flex">
       <Queue className="flex">
-        <p className="upNext">Up Next</p>
+        <UpNext>Up Next</UpNext>
         <div className="queue-list">
           {tracks?.map((track: any, index: any) => (
             <div
