@@ -61,9 +61,10 @@ export const QueueItem = styled.div`
 
   p {
     margin: 0px;
+
+    &.track-name {
+      width: 75%;
+      text-overflow: ellipsis;
+    }
   }
 `;
-
-//   .track-name {
-//     width: 75%;
-//     text-overflow: ellipsis;
